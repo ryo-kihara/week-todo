@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS';
+}
+
+.container {
+  margin: 0 10px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  background-size: cover;
+  background-color: #FFC7AF;
+}
+
+.day-of-the-week {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #FFC7AF;
+  margin: 0;
+}
+
+.day {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  user-select: none;
+}
+
+.day:hover {
+  text-decoration: underline;
+}
+
+.selectday {
+  font-size: 1.6rem;
+}
+
+[data-id="sut"] {
+  color: #136FFF;
+}
+
+[data-id="sun"] {
+  color: #FF0461;
+}
+
+main {
+  height: 300px;
+  overflow: scroll;
+  margin-top: 10px;
+}
+
+main > .content {
+  display: none;
+  height: 300px;
+  overflow: scroll;
+}
+
+main > .content.active {
+  display: block;
+}
+
+.todo {
+  font-size: 20px;
+  padding: 5px 15px;
+  border: 2px solid #FFC7AF;
+  margin-bottom: 1px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.already {
+  opacity: 0.2;
+}
+
+/* .todo:hover {
+  transform: scale(0.99);
+} */
+
+/* .todo::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f2ed';
+  font-weight: 600;
+  float: right;
+  line-height: 1.8rem;
+} */
+
+/* .todo::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  font-weight: 600;
+  float: right;
+  line-height: 1.8rem;
+  color: #00FF00;
+}
+
+.todo:hover::after {
+  transform: scale(0.9);
+} */
+
+.submit {
+  display: flex;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  font-size: 15px;
+  border: 3px solid #FFC7AF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+button {
+  width: 20%;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  height: 36px;
+  background-color: #FFC7AF;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  user-select: none;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:focus {
+  outline: 0;
+}
