@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Week Todo</title>
+  </head>
+  <body>
+    <h2 class="title">My Todo</h2>
+
+    <div class="container">
+      <div class="week">
+        <ul class="day-of-the-week">
+          <li data-id="mon" class="day">Mon</li>
+          <li data-id="tue" class="day">Tue</li>
+          <li data-id="wed" class="day">Wed</li>
+          <li data-id="thu" class="day">Thu</li>
+          <li data-id="fri" class="day">Fri</li>
+          <li data-id="sut" class="day">Sat</li>
+          <li data-id="sun" class="day">Sun</li>
+        </ul>
+      </div>
+
+      <main>
+        <div id="mon" class="content"></div>
+        <div id="tue" class="content"></div>
+        <div id="wed" class="content"></div>
+        <div id="thu" class="content"></div>
+        <div id="fri" class="content"></div>
+        <div id="sut" class="content"></div>
+        <div id="sun" class="content"></div>
+      </main>
+
+      <div class="submit">
+        <input id="input" type="text">
+        <button id="btn" type="button" name="button">Add</button>
+      </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
