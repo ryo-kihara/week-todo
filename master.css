@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Comic Sans MS';
+  font-family: 'Helvetica','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'sans-serif;
 }
 
 .container {
@@ -76,31 +76,6 @@ main > .content.active {
   opacity: 0.2;
 }
 
-/* .todo:hover {
-  transform: scale(0.99);
-} */
-
-/* .todo::after {
-  font-family: "Font Awesome 5 Free";
-  content: '\f2ed';
-  font-weight: 600;
-  float: right;
-  line-height: 1.8rem;
-} */
-
-/* .todo::after {
-  font-family: "Font Awesome 5 Free";
-  content: '\f00c';
-  font-weight: 600;
-  float: right;
-  line-height: 1.8rem;
-  color: #00FF00;
-}
-
-.todo:hover::after {
-  transform: scale(0.9);
-} */
-
 .submit {
   display: flex;
   margin: 20px 0;
@@ -114,6 +89,7 @@ input[type="text"] {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: none;
+  display: none;
 }
 
 input[type="text"]:focus {
@@ -131,6 +107,7 @@ button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   user-select: none;
+  display: none;
 }
 
 button:hover {
@@ -139,4 +116,42 @@ button:hover {
 
 button:focus {
   outline: 0;
+}
+
+.control {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: #FFC7AF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  position: relative;
+  top: 2px;
+  opacity: 0.8;
+}
+
+.btn i {
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+}
+
+.percent {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: 900;
+  user-select: none;
 }
